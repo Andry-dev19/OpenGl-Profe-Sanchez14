@@ -138,7 +138,6 @@ int main() {
 
         glUseProgram(shaders[currentScene]);
         glBindVertexArray(VAOs[currentScene]);
-
         glDrawElements(GL_TRIANGLES, (currentScene + 1) * 3, GL_UNSIGNED_INT, 0);
 
         glfwSwapBuffers(window);
