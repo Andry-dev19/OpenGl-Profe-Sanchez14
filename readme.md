@@ -11,12 +11,18 @@ Linux: g++
 para compilarlo en Linux (Ubuntu/Debian)
 
 sudo apt update
+
 sudo apt install cmake g++ libglfw3-dev libgl1-mesa-dev
 
 git clone --recurse-submodules https://github.com/Andry-dev19/OpenGl-Profe-Sanchez14.git
+
 cd OpenGl-Profe-Sanchez14
+
 mkdir build && cd build
+
 cmake ..
+
 cmake --build .
+
 ./OpenGLStarter
 
