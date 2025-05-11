@@ -28,11 +28,14 @@ Shader.h y elshaders.cpp contienen la clase Shader, que carga, compila y enlaza 
 
 En el bucle principal (main.cpp), se actualiza el color según la escena actual:
 
+
 cpp
 glm::vec3 figureColors[3] = {
     {1.0f, 0.0f, 0.0f}, Rojo
     {0.0f, 1.0f, 0.0f}, Verde
     {0.0f, 0.0f, 1.0f}  Azul
 };
+
+
 shader.setVec3("uColor", figureColors[currentScene].x, ...);
 
