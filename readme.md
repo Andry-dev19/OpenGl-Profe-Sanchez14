@@ -20,9 +20,22 @@ cd OpenGl-Profe-Sanchez14
 
 mkdir build && cd build
 
-cmake ..
+Nuevas cosas:
+El fragment_shader.frag que maneja el color de todas las figuras mediante una variable uniform.
 
-cmake --build .
+tambien tiene:
+Shader.h y elshaders.cpp contienen la clase Shader, que carga, compila y enlaza los shaders.
 
-./OpenGLStarter
+En el bucle principal (main.cpp), se actualiza el color según la escena actual:
+
+
+cpp
+glm::vec3 figureColors[3] = {
+    {1.0f, 0.0f, 0.0f}, Rojo
+    {0.0f, 1.0f, 0.0f}, Verde
+    {0.0f, 0.0f, 1.0f}  Azul
+};
+
+
+shader.setVec3("uColor", figureColors[currentScene].x, ...);
 
